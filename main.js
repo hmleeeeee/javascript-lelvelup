@@ -1,6 +1,5 @@
-const str = 'Hello world!'
+const str = 'thesecon@gmail.com'
 
-console.log(str.replace('world', 'HYOKI')) //Hello HYOKI!
-console.log(str.replace(' world!', '')) //Hello (문자 생략)
+console.log(str.match(/.+(?=@)/)[0])  //정규 표현식(RegExp) 이용하여 도메인 제외한 ID만 추출
 
-// replace -> 첫번째 인수에 해당하는 문자를 찾아서 두번째 인수에 해당하는 내용으로 교체
+//match -> 특정한 문자 데이터에서 일치 시켜서 배열 데이터로 반환
