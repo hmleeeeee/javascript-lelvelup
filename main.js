@@ -1,6 +1,6 @@
 const str = 'Hello world!'
 
-console.log(str.slice(0, 3))
+console.log(str.replace('world', 'HYOKI')) //Hello HYOKI!
+console.log(str.replace(' world!', '')) //Hello (문자 생략)
 
-// slice -> 문자열의 일부를 추출하면서 새로운 문자열을 반환
-// endIndex - 0부터 시작하는 추출 종료점 인덱스로 그 직전까지 추출
+// replace -> 첫번째 인수에 해당하는 문자를 찾아서 두번째 인수에 해당하는 내용으로 교체
