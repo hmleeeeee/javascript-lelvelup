@@ -1,5 +1,5 @@
-const str = 'thesecon@gmail.com'
+const str = '    Hello world     '
 
-console.log(str.match(/.+(?=@)/)[0])  //정규 표현식(RegExp) 이용하여 도메인 제외한 ID만 추출
+console.log(str.trim())
 
-//match -> 특정한 문자 데이터에서 일치 시켜서 배열 데이터로 반환
+//trim -> 특정한 문자 데이터에서 앞 뒤 공백을 제거
